@@ -1,0 +1,644 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: Arial,simsun,sans-serif,"宋体";
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#header, #stepbar, #category, #categorySearch, #footer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+i {
+    font-style: italic;
+}
+a :hover {
+    text-decoration: none;
+}
+.topbar{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	height: 27px;
+	background:#f5f5f5 ;
+	color: #666;
+	font:12px/2 Arial,Tahoma,"宋体"
+}
+.topbar a{
+	color: #666;
+	cursor: pointer;
+	text-decoration:none;
+}
+.topbar a:hover{
+	color: red;
+	text-decoration:underline;
+}
+.bar_right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: right;
+}
+.modify{
+	margin-left: -10px;
+	color: gray;
+	float: left;
+}
+.gap{
+	color: #ccc;
+	font-family: "宋体";
+}
+#topbar .haschild {
+    padding: 0 25px 0 10px;
+    position: relative;
+    z-index: 999;
+    height: 27px;
+    line-height: 27px;
+}
+
+#login {
+    line-height: 27px;
+    padding: 0 8px;
+    position: relative;
+    float: left;
+    list-style: none;
+}
+#topbar .haschild, #login-name, #myhouse {
+    float: left;
+}
+.hc {
+    display: none;
+}
+.arrow{
+	background: url() no-repeat 0 -156px;
+	display: block;
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    overflow: hidden;
+    top: 12px;
+    right: 10px;
+    background-image: url(../img/topbar.png)!important;
+}
+.myhouse{
+	width: 58px;
+}
+
+#selection {
+    width: 968px;
+    border: solid 1px #e1e1e1;
+    margin: 0 auto;
+    clear: both;
+    font-size: 12px;
+    padding: 5px 15px 10px;
+    color: gray;
+    position: relative;
+    z-index: 3;
+}
+.seltabs {
+    clear: both;
+    color: gray!important;
+    padding-left: 15px;
+    height: 37px;
+    border-bottom: 1px solid #e1e1e1;
+    zoom: 1;
+    margin: 0 -15px 5px;
+    position: relative;
+    z-index: 1;
+}
+.seltabs .select span {
+    background-position: 0 -372px;
+    height: 29px;
+    line-height: 29px;
+}
+.seltabs a span {
+    display: inline-block;
+    padding: 0 8px 0 10px;
+    height: 29px;
+    line-height: 29px;
+    _line-height: 29px;
+    line-height: 29px\0;
+    _overflow: hidden;
+    font-size: 12px;
+    background-position: 0 -343px;
+}
+.seltabs .select {
+    background-position: right -372px;
+    height: 29px;
+    font-weight: 700;
+}
+.seltabs a{
+	cursor: default;
+}
+
+.seltabs a {
+    float: left;
+    display: inline-block;
+    padding: 0 2px 0 0;
+    background-position: right -343px;
+    margin: 0 4px 0 0;
+    height: 29px;
+    color: gray!important;
+    position: relative;
+    top: 10px;
+    z-index: 9999;
+    margin-top: -1px;
+}
+.relative {
+    position: relative;
+    width: 968px;
+    line-height: 24px;
+    z-index: 1;
+}
+.relative dl {
+    width: 950px;
+}
+.secitem {
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+}
+.secitem dt {
+    float: left;
+}
+.secitem dd {
+    overflow: hidden;
+    display: block;
+    zoom: 1;
+}
+#filter_quyu a {
+    margin-right: 7px;
+}
+.secitem span, .secitem a {
+    display: inline-block;
+    float: left;
+    white-space: nowrap;
+}
+.select a, a.select, .select {
+    color: #333!important;
+    font-weight: 700;
+    text-decoration: none;
+}
+#selection a:link, #selection a:visited {
+    color: #25d;
+}
+#filter_quyu a {
+    margin-right: 7px;
+}
+#selection a:hover, #selection a:active {
+    color: red;
+}
+.relative a{
+	text-decoration: none;
+}
+.secitem a {
+    margin-right: 1em;
+}
+.prifilter {
+    padding-top: 3px;
+    white-space: nowrap;
+    height: 20px;
+}
+.text {
+    margin: 0 3px 0 0;
+}
+.prifilter .text input {
+    width: 40px;
+    text-align: center;
+}
+.text input {
+    border: solid 1px #ccc;
+    padding: 1px 0 0 3px;
+}
+.btn, .text, .btn input, .text input {
+    display: inline-block;
+    float: left;
+    border: 0;
+    height: 21px;
+    line-height: 21px;
+    zoom: 1;
+}
+.text2, .text2 input {
+    height: 17px;
+    line-height: 17px;
+    font-size: 12px;
+}
+input, img {
+    vertical-align: middle;
+}
+.prifilter .dev {
+    line-height: 18px;
+    padding-right: 3px;
+}
+.text input {
+    border: solid 1px #ccc;
+    padding: 1px 0 0 3px;
+}
+#SearchForm {
+    margin-top: 9px;
+    position: relative;
+    zoom: 1;
+    display: block;
+    background: url(../img/searchnew0912.png) no-repeat 0 0;
+    height: 28px;
+    z-index: 8;
+}
+#SearchForm #keyword1 {
+    border: 0;
+    line-height: 18px;
+    height: 18px;
+    width: 284px;
+    display: inline-block;
+    float: left;
+    margin: 4px 7px 0 4px;
+}
+
+.c_000 {
+    color: #000;
+}
+.sbtn {
+    float: left;
+    display: inline-block;
+}
+.sbtn .atcate {
+    background-position: 0 -28px;
+    width: 76px;
+    color: #fff;
+    margin-right: 1px;
+}
+.sbtn input {
+    border: 0;
+    display: inline-block;
+    height: 28px;
+    width: 76px;
+    text-align: center;
+    background: url(../img/searchnew0912.png) no-repeat 0 -28px;
+    padding-bottom: 4px;
+    line-height: 24px;
+    line-height: 28px\9;
+    _line-height: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.sbtn .global {
+    background-position: -76px -28px;
+    margin-left: 5px;
+}
+#category {
+    position: relative;
+    margin-top: 10px;
+    z-index: 4;
+}
+.tabsbar {
+    z-index: 2000;
+}
+.tabsbar {
+    width: 1000px;
+    height: 37px;
+    line-height: 36px;
+    border-bottom: #e71 solid 2px;
+    font-size: 14px;
+    position: relative;
+    z-index: 4;
+}
+.list-tabs a.sel {
+    border-color: #dc5200;
+    background: #ee7510;
+    border-bottom: none;
+}
+.list-tabs a {
+    display: inline-block;
+    float: left;
+    margin-right: 4px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dbdde1;
+    border-bottom: none;
+    color: #242527;
+}
+.list-tabs a.sel span {
+    color: #fff;
+    font-weight: 700;
+}
+.list-tabs a span {
+    display: inline-block;
+}
+.list-tabs a.sel span h1 {
+    font-weight: 700;
+    display: inline;
+}
+#infolist.cleft {
+    float: left;
+}
+.filterbar {
+    position: relative;
+    z-index: 1500;
+}
+.tbfilter {
+    width: 100%;
+}
+
+
+:hov
+
+
+.cls
+
+element.style {
+}
+.tbfilter {
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+colgroup {
+    display: table-column-group;
+}
+col {
+    display: table-column;
+}
+.wjg {
+    width: 90px;
+}
+.wdate {
+    width: 110px;
+}
+.tbfilter .checkbox {
+    margin-left: 10px;
+}
+.checkbox {
+    cursor: pointer;
+    white-space: nowrap;
+}
+.nearsq span, .checkbox {
+    float: left;
+    display: inline-block;
+    zoom: 1;
+}
+.checkbox input {
+    vertical-align: middle;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+.tbfilter .checkbox label {
+    color: #666!important;
+}
+.checkbox label {
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    color: #25d!important;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.tbfilter td {
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px;
+    padding: 0;
+    border: none;
+    text-align: left;
+}
+.tbfilter td .sortBlock {
+    float: left;
+    width: 100px;
+    position: static;
+    background: #fff;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.tbfilter td a.sortDefault {
+    border: 1px solid #dcdee1;
+    border-bottom: 1px solid #b5b7bc;
+    display: block;
+    background: #fff;
+    width: 118px;
+    float: left;
+    line-height: 20px;
+    overflow: hidden;
+    height: 20px;
+}
+.tbfilter td .sortBlock a {
+    text-align: left;
+    text-indent: 5px;
+    color: #565656;
+}
+.tbfilter td a.sortDefault span {
+    float: left;
+}
+.tbfilter td a.sortDefault s {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background: url(../img/list_fangimg.png) no-repeat -42px -44px #fff;
+}
+.tbfilter td .sortList {
+    display: none;
+}
+.tbfilter td .sortList a:hover, .tbfilter td .sortList a.sel_on {
+    background: url(../img/sel_on.png) no-repeat right center #f5f5f5;
+}
+.tbfilter td .sortList a {
+    display: block;
+    vertical-align: top;
+    line-height: 24px;
+    background: #fff;
+}
+.main {
+    width: 1000px;
+    background: url(../img/mainbg_03-17.png) repeat-x 0 0;
+}
+.cl {
+    clear: both;
+}
+.tbimg {
+    table-layout: auto;
+}
+.tbimg, .tblist {
+    width: 100%;
+    font-size: 12px;
+    table-layout: fixed;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.wimg {
+    width: 120px;
+}
+.wrentm {
+    width: 132px;
+}
+.tbimg td {
+    padding: 7px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: .5em 1em;
+}
+.tbimg td, .tblist td {
+    border: none;
+    border-bottom: solid 1px #ddd;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #666;
+    border-collapse: collapse;
+}
+caption, th, td {
+    font-weight: 400;
+    text-align: left;
+}
+
+.img_list {
+    position: relative;
+    text-align: left;
+    padding: 15px;
+}
+
+.img_list {
+    position: relative;
+    text-align: left;
+    padding: 15px;
+}
+.img_list .img_picCount {
+    width: 35px;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    color: #fff;
+    left: 15px;
+    _left: 0;
+    top: 15px;
+}
+
+.img_list .img_picCount .img_picCountOpacity {
+    background-color: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1;
+}
+.img_list .img_picCount span {
+    width: 35px;
+    height: 18px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    left: 0;
+}
+.tbimg td {
+    padding: 7px;
+}
+
+a.t:visited {
+    color: #609;
+}
+a.t, .ico, .fl {
+    float: left;
+    margin-right: 2px;
+    display: inline-block;
+}
+a.t {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: 400;
+    color: #25d;
+}
+.tbimg .clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.qj-renaddr, .qj-rendp, .qj-rendp span, .qj-renaddr a {
+    line-height: 26px;
+    color: #555557;
+}
+.qj-renaddr {
+    margin: 5px 0;
+}
+a.a_xq1 {
+    color: #555557!important;
+}
+.qj-renaddr {
+    margin: 5px 0;
+}
+.qj-renaddr span {
+    padding: 0 5px;
+}
+.tbimg .pri {
+    font-size: 16px;
+    font-weight: 700;
+}
+.tbimg td b, .tblist td b {
+    color: red;
+    font-weight: 400;
+}
+.pri {
+    color: #e22;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 1;
+    _position: relative;
+    _top: -1px;
+}
+td.img img {
+    width: 100px;
+    height: 75px;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.tbimg td img, .tblist td img {
+    border: none;
+}
+.qj-rentd a{
+	text-decoration:none;
+}
+.bg{
+	width: 100%;
+}
+.qj-rentd{
+	padding-left: 100px!important;
+}
+.pager strong {
+    font-weight: 700;
+}
+.pager a:hover, .pager strong {
+    background-position: 0 -156px;
+    color: #fff!important;
+    text-decoration: none;
+}
+.pager a, .pager strong, .hotarea dt {
+    margin: 0 1px;
+    padding: 0 0 0 1px;
+    display: inline-block;
+    background-position: 0 -200px;
+    vertical-align: middle;
+    color: gray!important;
+    cursor: pointer;
+}
+.pager a:hover span, .pager strong span {
+    background-position: right -156px;
+}
+.pager a span, .pager strong span, .hotarea dt span {
+    display: inline-block;
+    padding: 0 8px 0 7px;
+    background-position: right -200px;
+}

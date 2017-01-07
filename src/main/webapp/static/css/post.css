@@ -1,0 +1,691 @@
+@charset "UTF-8";
+body {
+	font-size: 14px
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font: 400 14px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif;
+	color: #333;
+	text-align: center;
+	background-color: #fff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+button,
+input,
+textarea,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	font: 400 14px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", SimHei, Tahoma, "宋体", SimSun, sansserif
+}
+
+div {
+	margin: 0 auto;
+	text-align: left;
+	font: 400 14px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif
+}
+
+li,
+p {
+	text-align: left;
+	font: 400 14px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif
+}
+
+a:link,
+a:visited {
+	color: #333;
+	text-decoration: none
+}
+
+a:hover {
+	color: #ed6d06;
+	text-decoration: underline
+}
+
+img {
+	border: none
+}
+
+ol,
+ul,
+li {
+	list-style: none
+}
+
+em,
+i {
+	font-style: normal
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	background-color: #fff!important;
+	background-image: none;
+	color: #000
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	background: red
+}
+
+.clearfix {
+	display: inline-block
+}
+
+* html .clearfix {
+	height: 1%
+}
+
+.clearfix {
+	display: block
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+#postheader {
+	height: 58px;
+	position: relative;
+	display: block;
+	margin: 8px auto;
+	width: 1000px
+}
+
+#logo {
+	margin-top: 18px;
+	float: left;
+	padding-right: 20px
+}
+
+#logo img {
+	border: none;
+	width: 137px;
+	height: 36px
+}
+
+#postheader .sub_title {
+	height: 30px;
+	margin: 23px 10px 0 0;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 120%;
+	color: #000;
+	float: left;
+	border-left: 1px solid #e2e2e2;
+	padding-left: 20px
+}
+
+#postheader h2 {
+	font-weight: 400
+}
+
+#postheader .sub_title b {
+	float: left;
+	font-weight: 400;
+	line-height: 37px
+}
+
+.propbar {
+	font-size: 12px;
+	width: 325px;
+	float: left;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #d2cdca;
+	margin-right: 13px
+}
+
+#propbarthree {
+	margin-right: 0
+}
+
+.active {
+	font-size: 12px;
+	width: 325px;
+	float: left;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #ed6d06;
+	margin-right: 10px;
+	margin-bottom: 20px
+}
+
+.active {
+	color: #ed6d06
+}
+
+.active a {
+	font-size: 12px;
+	color: #ed6d06;
+	font-weight: 700
+}
+
+.progcontrl {
+	margin-top: 19px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.propbar a {
+	font-size: 12px;
+	color: #a6a6a6;
+	margin-left: 5px;
+	text-decoration: none
+}
+
+#footer {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px
+}
+
+#footer a {
+	margin-left: 8px;
+	text-decoration: none
+}
+
+.hr_s {
+	background: #DBE0E3;
+	height: 1px;
+	margin: 0 2px 0;
+	font-size: 0;
+	clear: both;
+	overflow: hidden
+}
+
+.content {
+	background: #fff;
+	clear: both;
+	padding: 0;
+	*margin-top: 20px;
+	_height: 10px;
+	position: relative;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	z-index: 998
+}
+
+.minheight {
+	min-height: 300px;
+	_height: 300px
+}
+
+.ym-mainmnu,
+.post2 {
+	font-size: 14px
+}
+
+.ym-mainmnu {
+	width: 1000px
+}
+
+.ym-tab {
+	float: left;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+	margin-right: 320px;
+	_display: inline;
+	z-index: 998
+}
+
+.ym-submnu {
+	position: absolute;
+	top: 0;
+	left: 177px;
+	z-index: 999;
+	width: 308px;
+	*width: 320px;
+	_height: 32px;
+	border: 1px solid #DFE3E6;
+	padding: 4px 0 4px;
+	background: #fff;
+	display: none
+}
+
+.ym-submnu li {
+	width: 50%;
+	margin-right: 0;
+	overflow: hidden;
+	float: left
+}
+
+.post_ym_li dl {
+	font-size: 14px;
+	color: #000;
+	font-family: simsun
+}
+
+.post_ym_li dl dt {
+	font-weight: 700;
+	clear: both
+}
+
+.post_ym_li dl dd {
+	margin: 0;
+	padding: 0
+}
+
+.ym-tab a {
+	font-family: "宋体";
+	color: gray;
+	font-size: 16px;
+	line-height: 40px
+}
+
+.ym-tab span {
+	font-family: "宋体";
+	color: gray;
+	font-size: 16px;
+	line-height: 40px
+}
+
+.current {
+	cursor: default;
+	float: left;
+	width: 188px;
+	height: 40px;
+	padding-right: 312px;
+	margin-right: 0;
+	position: relative
+}
+
+.current a {
+	display: block;
+	width: 183px;
+	height: 38px;
+	position: absolute;
+	top: -2px;
+	left: 0;
+	z-index: 1000;
+	line-height: 38px;
+	text-indent: 9px;
+	color: #ed6d06;
+	text-decoration: underline;
+	font-weight: 400;
+	border: 1px solid #e0e0e0;
+	border-left: none;
+	border-right: none;
+	background: #fff
+}
+
+.current span {
+	display: block;
+	width: 178px;
+	height: 38px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	line-height: 38px;
+	text-indent: 10px;
+	color: #ed6d06;
+	font-weight: 400;
+	border: 1px solid #e0e0e0;
+	border-left: none;
+	border-right: none;
+	background: #fff
+}
+
+.current li.post_ym_li {
+	*padding-right: 0
+}
+
+.current li.post_ym_li.w_65 {
+	width: 57%;
+	overflow: hidden
+}
+
+.current li.post_ym_li.w_35 {
+	width: 43%
+}
+
+.current .ym-submnu {
+	display: block
+}
+
+.post_ym_li dl dd .w_50 {
+	margin-left: 0;
+	width: 58%;
+	overflow: hidden
+}
+
+.current .ym-submnu li a {
+	color: #15C;
+	text-decoration: none;
+	font-weight: 400;
+	width: 160px;
+	height: 30px;
+	display: block;
+	background: 0 0;
+	line-height: 30px;
+	position: static;
+	top: auto;
+	left: auto;
+	overflow: hidden;
+	font-family: "宋体";
+	color: gray;
+	font-size: 14px;
+	border: none
+}
+
+.current li.post_ym_li dl dd a {
+	display: inline;
+	width: auto
+}
+
+.icon {
+	float: left;
+	width: 18px;
+	height: 18px;
+	display: block;
+	margin-top: 9px;
+	background: url(http://img.58cdn.com.cn/ui7/post/img/fb_list_post.png) no-repeat;
+	_background: url(http://img.58cdn.com.cn/ui7/post/img/fb_list_post_ie6.png) no-repeat
+}
+
+.fcicon {
+	background-position: -2px -4px
+}
+
+.fciconhover {
+	background-position: -2px -35px
+}
+
+.mficon {
+	background-position: -40px -4px
+}
+
+.mficonhover {
+	background-position: -40px -35px
+}
+
+.tzicon {
+	background-position: -41px -59px
+}
+
+.tziconhover {
+	background-position: -41px -90px
+}
+
+.djicon {
+	background-position: -77px -59px
+}
+
+.djiconhover {
+	background-position: -77px -90px
+}
+
+.clicon {
+	background-position: -77px -122px
+}
+
+.cliconhover {
+	background-position: -77px -153px
+}
+
+.shicon {
+	background-position: -41px -340px
+}
+
+.shiconhover {
+	background-position: -41px -371px
+}
+
+.cwicon {
+	background-position: -77px -178px
+}
+
+.cwiconhover {
+	background-position: -77px -209px
+}
+
+.swicon {
+	background-position: -4px -286px
+}
+
+.swiconhover {
+	background-position: -4px -317px
+}
+
+.pwicon {
+	background-position: -6px -230px
+}
+
+.pwiconhover {
+	background-position: -6px -261px
+}
+
+.jyicon {
+	background-position: -41px -230px
+}
+
+.jyiconhover {
+	background-position: -41px -261px
+}
+
+.xricon {
+	background-position: -77px -4px
+}
+
+.xriconhover {
+	background-position: -77px -35px
+}
+
+.hqicon {
+	background-position: -4px -340px
+}
+
+.hqiconhover {
+	background-position: -4px -371px
+}
+
+.lyicon {
+	background-position: -4px -59px
+}
+
+.lyiconhover {
+	background-position: -4px -90px
+}
+
+.tcicon {
+	background-position: -7px -122px
+}
+
+.tciconhover {
+	background-position: -7px -153px
+}
+
+.ylicon {
+	background-position: -43px -122px
+}
+
+.yliconhover {
+	background-position: -43px -153px
+}
+
+.cyicon {
+	background-position: -7px -178px
+}
+
+.cyiconhover {
+	background-position: -7px -209px
+}
+
+.zsicon {
+	background-position: -43px -178px
+}
+
+.zsiconhover {
+	background-position: -43px -209px
+}
+
+.zxicon {
+	background-position: -41px -286px
+}
+
+.zxiconhover {
+	background-position: -41px -317px
+}
+
+.pficon {
+	background-position: -77px -286px
+}
+
+.pficonhover {
+	background-position: -77px -317px
+}
+
+.nlicon {
+	background-position: -77px -232px
+}
+
+.nliconhover {
+	background-position: -77px -263px
+}
+
+.psearch {
+	font-size: 14px;
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: -10px;
+	*margin-left: 0;
+	clear: both
+}
+
+.pshead {
+	padding: 5px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 34px;
+	overflow: hidden;
+	background-color: #fafafa
+}
+
+.pshead .pstxt {
+	float: left;
+	width: 320px;
+	height: 30px;
+	overflow: hidden;
+	margin-left: -1px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #ccc;
+	border: 1px solid #e0e0e0;
+	border-right: none;
+	background: url(http://pic2.58.com/ui6/post/psearch.gif?version=20120424) 0 -68px repeat-x
+}
+
+.pshead .psbtn {
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 109px;
+	height: 34px;
+	overflow: hidden;
+	border: none;
+	background: url(http://img.58cdn.com.cn/ui7/post/img/search.png) no-repeat;
+	_background: url(http://img.58cdn.com.cn/ui7/post/img/search_ie6.png) no-repeat;
+	line-height: 599px;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+.current .ym-submnu li a:hover {
+	text-decoration: underline;
+	color: #ed6d06
+}
+
+.minheightout {
+	position: relative;
+	z-index: 1
+}
+
+.psearch .psbox {
+	width: 920px;
+	padding: 10px;
+	background: #f9f9f9
+}
+
+.psearch .psbox ul {
+	width: 898px;
+	height: 145px;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #DCE2E6;
+	overflow-y: scroll
+}
+
+.psearch .psbox ul li {
+	line-height: 1.8em
+}
+
+.psearch .psbox ul li i {
+	color: red;
+	font-style: normal
+}
+
+.psearch .pscannel {
+	text-align: right;
+	width: 940px
+}
+
+.psearch .pscannel em {
+	cursor: pointer;
+	font-style: normal;
+	padding: 4px 15px;
+	line-height: 20px;
+	background: #f9f9f9
+}
+
+#back_old {
+	font-size: 12px;
+	color: #15c;
+	position: absolute;
+	right: 3px;
+	top: 35px
+}

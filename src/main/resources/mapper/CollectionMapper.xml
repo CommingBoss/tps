@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seven.dao.CollectionDao">
+	<resultMap id="BaseResultMap" type="com.seven.model.Collection">
+		<id column="collectionId" property="collectionId" jdbcType="INTEGER" />
+		<result column="userId" property="userId" jdbcType="INTEGER" />
+		<result column="houseInfoId" property="houseInfoId" jdbcType="INTEGER" />
+		<result column="date" property="date" jdbcType="TIMESTAMP" />
+		<result column="deleteFlag" property="deleteFlag" jdbcType="INTEGER" />
+	</resultMap>
+
+	<insert id="insert">
+		insert into collection (userId,houseInfoId,date,deleteFlag)
+		values
+		(
+		#{userId},
+		#{houseInfoId},
+		#{date},
+		'0'
+		);
+	</insert>
+	
+	<update id="delete">
+		update collection
+		set deleteFlag = '1'
+		where
+		userId = #{userId} and houseInfoId = #{houseInfoId};
+	</update>
+	
+	<select id="allCollectHouseInfo" resultMap="BaseResultMap">
+		select *
+		from collection,houseinfo 
+		where collection.userId = #{userId} and collection.userId = houseinfo.userId and
+		collection.houseInfoId = houseinfo.houseInfoId;
+	</select>
+</mapper>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="./static/css/Login.css" rel="stylesheet" type="text/css" />
+		<link href="./static/css/button.css" rel="stylesheet" type="text/css" />
+	</head>
+	<script src="./static/jquery-1.7.2.js"></script>
+	<body class="bp-Page">
+		<h1>小学生考试系统|</h1>
+		<h2>登陆界面</h2>
+		<div class="bp-LoginBox">
+			<div class="bp-Title">小学生考试系统</div>
+			<div class="bp-UserNameBox">
+				<div>用 户 名 ：</div>
+				<input class="mysearch" results="s" placeholder="请 输 入 用 户 名" style="margin-left:0px" id="userName" />
+			</div>
+			<div class="bp-UserNameBox">
+				<div> 密 &ensp; &ensp;码 ：</div>
+				<input class="mysearch" type="password" results="s" placeholder="请 输 入 密码" style="margin-left: 0px;" id="userPassword" />
+			</div>
+			<div class="bp-Login">
+				<center><a class="button button-royal button-pill button-giant" style="width: 250px;background: grey;" onclick="login()">登&ensp;&ensp;陆</a></center>
+			</div>
+			<div>
+				<center><a class="button button-royal button-pill button-giant" style="width: 250px;background: grey;" onclick="login()">注&ensp;&ensp;册</a></center>
+			</div>
+		</div>
+	</body>
+	<script>
+		function login() {
+			
+			alert("123");
+			var userId = document.getElementById("userName").value; //获取用户名
+			var userpsw = document.getElementById("userPassword").value; //获取用户密码
+			$.ajax({
+						type: "POST",
+						url: "http://localhost:8080/tps/user/register",
+						dataType:"json",
+						data:{
+							name:userId,
+							password:userpsw,
+							type:"2",
+							tel:"15228375215"
+						},
+						success: function(result) {
+							if(result.code == 0){
+								//注册成功
+								alert(JSON.stringify(result.msg));
+							}
+							else{
+								//注册失败
+								alert(JSON.stringify(result.msg));
+							}
+						},
+						error:function(data){
+							alert("网络请求超时，请稍后再试");
+						}
+			});
+
+		}
+	</script>
+
+</html>

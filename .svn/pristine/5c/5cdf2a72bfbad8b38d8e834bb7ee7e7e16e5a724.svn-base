@@ -1,0 +1,55 @@
+package com.seven.model;
+
+import java.util.Date;
+
+/**
+ * 
+ * @author 刘杰
+ * @time 2016年4月27日 下午8:30:32
+ * @description 温度
+ */
+public class Record {
+
+	private Double temp;
+	private Date time;
+
+	public Record(Double temp, Date time) {
+		this.temp = temp;
+		this.time = time;
+	}
+
+	public Double getTemp() {
+		return temp;
+	}
+
+	public void setTemp(Double temp) {
+		this.temp = temp;
+	}
+
+	public Date getTime() {
+		return time;
+	}
+
+	public void setTime(Date time) {
+		this.time = time;
+	}
+
+	/**
+	 * 
+	 * @author LiuJie
+	 * @time 2016年4月28日 下午1:26:29
+	 * @description 从小时开始获取秒数
+	 * @return
+	 */
+	@SuppressWarnings("deprecation")
+	public double getSecFromHour() {
+		// int year = time.getYear();
+		// int month = time.getMonth();
+		// int day = time.getDate();
+		double hour = time.getHours();
+		double min = time.getMinutes();
+		double sec = time.getSeconds();
+		double s = hour + min / 60 + sec / 3600;
+		return s;
+	}
+}

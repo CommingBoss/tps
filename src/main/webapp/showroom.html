@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/detail.css" />
+		<link rel="stylesheet" href="css/easydialog.css" />
+		<link rel="stylesheet" href="css/MrSun.css" />
+		<link rel="stylesheet" href="css/share_style.css" />
+		<script type="text/javascript" src="js/showroom.js"></script>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+
+	<body>
+		<div style="display: none;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="1" height="1" id="rookieswf"><param name="movie" value="http://img.58cdn.com.cn/js/file6/rookie.swf?25236"><param name="allowScriptAccess" value="always"><embed src="http://img.58cdn.com.cn/js/file6/rookie.swf?25236" width="1" height="1" name="rookieswf" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div>
+		<div id="topbar">
+			<div class="w pos">
+				<div class="bar_right">
+					<div id="login">
+						<a onclick="login()">登录</a><span class="gap">|</span>
+						<a onclick="login()">注册</a><span class="gap">|</span></div>
+					<div id="topbar_my58menu" class="haschild">
+						<a id="topbar_tomy58" target="_blank" href="http://my.58.com/?pp=topbar">我的租房</a><span class="arrow"></span><span class="gap">|</span>
+						<div class="hc" id="loginbox">
+							<a id="topbar_tomypost" target="_blank" href="http://my.58.com/index/?pp=topbar">我的发布</a>
+							<a id="topbar_tomytradebuy" target="_blank" href="http://my.58.com/buyordermgr/?pp=topbar">买家交易</a>
+							<a id="topbar_tomytradesale" target="_blank" href="http://my.58.com/saleordermgr/?pp=topbar">卖家交易</a>
+							<a id="topbar_tozhaopinqiuzhi" target="_blank" href="http://my.58.com/zhaopinqiuzhi/?pp=topbar">招聘/简历</a>
+							<a id="topbar_toCustomerService" target="_blank" href="http://my.58.com/mycomplain">客户服务</a>
+						</div>
+					</div>
+					<div id="myfeet" class="haschild"><span id="myfeet_span">浏览历史</span><span class="arrow"></span><span class="gap">|</span>
+						<div id="myfeetBox" class="hc">
+							<ul id="feet_final">
+								<li>数据加载中...</li>
+							</ul><i class="shadow"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--诈骗提醒2-->
+
+		<div class="main">
+			<div class="house-title">
+				<h1 class="main-title font-heiti">
+            【独家房源】曼哈顿刚刚出来的2室2厅86平米精装修半年付房源(买房的亲们欢迎进入【链家地产】网页让您买得放心 )        </h1>
+
+				<div class="title-right-info cb7 f14 pa">
+					<span class="pl10">更新时间：2016-10-20</span>
+					<span class="pl10">浏览次数：<em id="totalcount">105</em></span>
+
+				</div>
+			</div>
+			<div class="house-info white-block clearfix" id="putImage">
+
+				<!-- 房源图片 -->
+				<!-- end 房源图片 -->
+				<div class="house-primary-content-wrap fr">
+					<ul class="house-primary-content">
+						<li class="house-primary-content-li house-primary-content-fir clearfix">
+							<span class="fl pr20 c2e zj">租金：</span>
+
+							<div class="fl">
+								<i class="ncolor">
+                                                            ¥&nbsp;
+                                <em class="house-price">1800</em>
+                                元/月                                                        </i>
+								<span class="pay-method f16 c70">半年付</span>
+							</div>
+
+						</li>
+						<li class="house-primary-content-li clearfix">
+							<span class="fl pr20 c2e">房屋：</span>
+
+							<div class="fl house-type c70">
+								2室 2厅 1卫 &nbsp;-&nbsp;86 m² &nbsp;-&nbsp;低层(共23层)<br>精装修 &nbsp;-&nbsp;朝向南北 &nbsp;-&nbsp;普通住宅 </div>
+						</li>
+						<li class="house-primary-content-li clearfix">
+							<span class="fl pr20 c2e">小区：</span>
+
+							<div class="fl xiaoqu c70">
+								<a href="/fuchengqu/zufang/" target="_blank" class="ablue" onclick="clickLog('from=fcpc_detail_mianyang_quyu')">涪城</a>&nbsp;-&nbsp;
+								<a href="/yuyingba/zufang/" target="_blank" class="ablue" onclick="clickLog('from=fcpc_detail_mianyang_shangquan')">御营坝</a>&nbsp;-&nbsp; 曼哈顿 </div>
+						</li>
+						<li class="house-primary-content-li clearfix">
+							<span class="fl pr20 c2e">地址：</span>
+
+							<div class="fl c70">
+								滨河南路
+							</div>
+						</li>
+						<li class="house-primary-content-li clearfix broker-config">
+							<span class="fl pr20 c2e">配置：</span>
+							<div class="fl c70">
+								<span class="inlineblock">床 &nbsp;-</span>
+								<span class="inlineblock">衣柜 &nbsp;-</span>
+								<span class="inlineblock">沙发 &nbsp;-</span>
+								<span class="inlineblock">电视 &nbsp;-</span>
+								<span class="inlineblock">冰箱 &nbsp;-</span>
+								<span class="inlineblock">洗衣机 &nbsp;-</span>
+								<span class="inlineblock">空调 &nbsp;-</span>
+								<span class="inlineblock">热水器 &nbsp;-</span>
+								<span class="inlineblock">宽带 &nbsp;-</span>
+								<span class="inlineblock">可做饭 &nbsp;-</span>
+								<span class="inlineblock">独立卫生间 &nbsp;-</span>
+								<span class="inlineblock">阳台</span>
+							</div>
+						</li>
+
+					</ul>
+					<div class="tel-wrap clearfix">
+
+						<div class="fl tel cfff">
+
+							<span class="tel-num tel-font">186 0815 0951</span>
+							<span class="f18 pl20">胡兵</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- 经纪人信息-->
+			<!-- 付费经纪人 -->
+
+			<!-- 小编点评 -->
+		<!--	<div id="nearby-house-list">
+				<div class="recommend-list white-block">
+					<div class="white-block-title f16">猜你喜欢</div>
+					<div class="recommend-houses-list-wrap">
+						<ul class="recommend-houses-list">
+							<li class="recommend-house pr">
+								<a href="http://mianyang.58.com/zufang/27075143537850x.shtml" target="_blank" class="recommend-house-a" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=nearby_&amp;pos=1_&amp;alg=IA=HOT2.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27075143537850');" data-index="1"><img src="http://pic7.58cdn.com.cn/p1/small/n_v1bl2lwxrkv22vpqjipryq.jpg" class="recommend-house-img">
+									<ul class="pa recommend-house-info">
+										<li class="recommend-house-info-name c2e clearfix"><span class="recommend-house-title f14 fl">阳光新城</span><span class="recommend-house-price f13 fr"><i class="ncolor">¥<em class="f14">1000元</em></i>/月</span></li>
+										<li class="f12 c75">110m²&nbsp;/&nbsp;2室2厅</li>
+										<li class="clearfix h31">
+											<div class="fr recommend-house-button cfff f13">去看看</div>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li class="recommend-house pr">
+								<a href="http://mianyang.58.com/zufang/27129138277044x.shtml" target="_blank" class="recommend-house-a" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=nearby_&amp;pos=2_&amp;alg=IA=HOT2.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27129138277044');" data-index="2"><img src="http://pic8.58cdn.com.cn/mobile/small/n_v1bl2lwkmld26fotroiijq.jpg" class="recommend-house-img">
+									<ul class="pa recommend-house-info">
+										<li class="recommend-house-info-name c2e clearfix"><span class="recommend-house-title f14 fl">御营坝</span><span class="recommend-house-price f13 fr"><i class="ncolor">¥<em class="f14">1000元</em></i>/月</span></li>
+										<li class="f12 c75">85m²&nbsp;/&nbsp;2室2厅</li>
+										<li class="clearfix h31">
+											<div class="fr recommend-house-button cfff f13">去看看</div>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li class="recommend-house pr">
+								<a href="http://mianyang.58.com/zufang/27492711522102x.shtml" target="_blank" class="recommend-house-a" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=nearby_&amp;pos=3_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27492711522102');" data-index="3"><img src="http://pic7.58cdn.com.cn/p1/small/n_v1bl2lwtnpottvoojuqz7a.jpg" class="recommend-house-img">
+									<ul class="pa recommend-house-info">
+										<li class="recommend-house-info-name c2e clearfix"><span class="recommend-house-title f14 fl">永兴镇</span><span class="recommend-house-price f13 fr"><i class="ncolor">¥<em class="f14">900元</em></i>/月</span></li>
+										<li class="f12 c75">89m²&nbsp;/&nbsp;2室2厅</li>
+										<li class="clearfix h31">
+											<div class="fr recommend-house-button cfff f13">去看看</div>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li class="recommend-house pr">
+								<a href="http://mianyang.58.com/zufang/27525436137792x.shtml" target="_blank" class="recommend-house-a" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=nearby_&amp;pos=4_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27525436137792');" data-index="4"><img src="http://pic5.58cdn.com.cn/p1/small/n_v1bl2lwkfxlhvvpbd4x4sa.jpg" class="recommend-house-img">
+									<ul class="pa recommend-house-info">
+										<li class="recommend-house-info-name c2e clearfix"><span class="recommend-house-title f14 fl">树高卡利亚</span><span class="recommend-house-price f13 fr"><i class="ncolor">¥<em class="f14">1500元</em></i>/月</span></li>
+										<li class="f12 c75">76m²&nbsp;/&nbsp;2室2厅</li>
+										<li class="clearfix h31">
+											<div class="fr recommend-house-button cfff f13">去看看</div>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li class="recommend-house pr">
+								<a href="http://mianyang.58.com/zufang/27248470661584x.shtml" target="_blank" class="recommend-house-a" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=nearby_&amp;pos=5_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27248470661584');" data-index="5"><img src="http://pic4.58cdn.com.cn/p1/small/n_v1bl2lwwkkkxffouldyeia.jpg" class="recommend-house-img">
+									<ul class="pa recommend-house-info">
+										<li class="recommend-house-info-name c2e clearfix"><span class="recommend-house-title f14 fl">辰兴优山美郡</span><span class="recommend-house-price f13 fr"><i class="ncolor">¥<em class="f14">1400元</em></i>/月</span></li>
+										<li class="f12 c75">98m²&nbsp;/&nbsp;3室2厅</li>
+										<li class="clearfix h31">
+											<div class="fr recommend-house-button cfff f13">去看看</div>
+										</li>
+									</ul>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+-->			<div class="house-description-wrap clearfix c70">
+				<div class="house-description fl" id="miaoshu">
+					<div class="house-description white-block pr">
+						<div class="description-navi-bar-wrap">
+							<ul class="description-navi-bar f18" id="float" style="width: 920px; background-color: rgb(255, 255, 255);">
+								<li>
+									<a href="#fangyuan"  jumpto="miaoshu" class="c2e mr20 pr20" >房源描述</a>
+								</li>
+								<li>
+									<a href="#fytupian" jumpto="fytupian" class="c2e mr20 pr20" >房源图片</a>
+								</li>
+								<!--<li>
+									<a href="#youlike-house-list" jumpto="youlike-house-list" class="c2e mr20 pr20" >看了又看</a>
+								</li>-->
+
+							</ul>
+						</div>
+						<div class="description-content" id="fangyuan">
+							<p><span style="font-size: 36px; color: rgb(255, 0, 0);">房源简介：</span></p>
+							<p><span style="font-size: 36px; color: rgb(255, 0, 0);"><span style="font-size: 24px; color: rgb(255, 0, 0);">&nbsp; &nbsp; 御营坝【阳光曼哈顿2期】刚刚出来的精装修房源出租，家具家电齐全户型2-2-1，直接拎包入住两个卧室都安装有空调，<span style="color: rgb(255, 0, 0); font-size: 24px; ">生活设施齐全，交通便利。</span>房屋干净整洁是您居家的好地方。</span>
+								</span>
+							</p>
+							<p><span style="font-size: 36px;"><br></span></p>
+						</div>
+						<div id="fytupian">
+							<div class="description-title-wrap">
+								<span class="ncolor f20 description-title">房源图片</span>
+							</div>
+							<ul class="house-images-list">
+								<li class="house-images-wrap"><img lazy_src="http://pic8.58cdn.com.cn/p1/big/n_v1bj3gzr7cqttfpiwkavfa.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+								<li class="house-images-wrap"><img lazy_src="http://pic5.58cdn.com.cn/p1/big/n_v1bl2lwwpbqttfps433fza.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+								<li class="house-images-wrap"><img lazy_src="http://pic3.58cdn.com.cn/p1/big/n_v1bkuyfvo7qttfoybcbqxq.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+								<li class="house-images-wrap"><img lazy_src="http://pic3.58cdn.com.cn/p1/big/n_v1bl2lwxxdqttfovy2u4eq.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+								<li class="house-images-wrap"><img lazy_src="http://pic1.58cdn.com.cn/p1/big/n_v1bl2lwtpfqttfp5gw3nrq.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+								<li class="house-images-wrap"><img lazy_src="http://pic1.58cdn.com.cn/p1/big/n_v1bl2lwkpgqttfoitbcyxa.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+								<li class="house-images-wrap"><img lazy_src="http://pic8.58cdn.com.cn/p1/big/n_v1bl2lwwphqttfovhogr7a.jpg" src="http://img.58cdn.com.cn/ui7/fang/detail/img/default.png" width="640"></li>
+							</ul>
+						</div>
+						<!-- 交通地图-->
+						<!-- 交通地图 end -->
+						<!-- 猜你喜欢 -->
+					<!--	<div id="youlike-house-list">
+							<div class="description-title-wrap"><span class="ncolor f20 description-title">看了又看</span></div>
+							<div class="recommend-houses-list-wrap cnxh">
+								<ul class="cnxh-recommend-houses-list">
+									<li class="cnxh-recommend-house pr">
+										<a href="http://mianyang.58.com/zufang/27645520785080x.shtml" target="_blank" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=sqtj_&amp;pos=1_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27645520785080');" class="cnxh-recommend-house-a" data-index="1"><img src="http://pic8.58cdn.com.cn/p1/small/n_v1bl2lwkc2vl4vodpaeugq.jpg" class="cnxh-recommend-house-img">
+											<ul class="pa cnxh-recommend-house-info">
+												<li class="cnxh-recommend-house-info-name c2e clearfix"><span class="cnxh-recommend-house-title f12 fl">阳光清华</span><span class="cnxh-recommend-house-price f12 fr"><i class="ncolor">¥<em class="f14">2200元</em></i>/月</span></li>
+												<li class="f12 c75">95m²&nbsp;/&nbsp;2室2厅</li>
+												<li class="clearfix h31">
+													<div class="fr cnxh-recommend-house-button cfff f13">去看看</div>
+												</li>
+											</ul>
+										</a>
+									</li>
+									<li class="cnxh-recommend-house pr">
+										<a href="http://mianyang.58.com/zufang/27115208222016x.shtml" target="_blank" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=sqtj_&amp;pos=2_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27115208222016');" class="cnxh-recommend-house-a" data-index="2"><img src="http://pic8.58cdn.com.cn/p1/small/n_v1bj3gzshkn67fo56squ2q.jpg" class="cnxh-recommend-house-img">
+											<ul class="pa cnxh-recommend-house-info">
+												<li class="cnxh-recommend-house-info-name c2e clearfix"><span class="cnxh-recommend-house-title f12 fl">富临东方广场</span><span class="cnxh-recommend-house-price f12 fr"><i class="ncolor">¥<em class="f14">2300元</em></i>/月</span></li>
+												<li class="f12 c75">113m²&nbsp;/&nbsp;3室2厅</li>
+												<li class="clearfix h31">
+													<div class="fr cnxh-recommend-house-button cfff f13">去看看</div>
+												</li>
+											</ul>
+										</a>
+									</li>
+									<li class="cnxh-recommend-house pr">
+										<a href="http://mianyang.58.com/zufang/27238491005008x.shtml" target="_blank" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=sqtj_&amp;pos=3_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27238491005008');" class="cnxh-recommend-house-a" data-index="3"><img src="http://pic3.58cdn.com.cn/p1/small/n_v1bl2lwkode7evot3ftnoa.jpg" class="cnxh-recommend-house-img">
+											<ul class="pa cnxh-recommend-house-info">
+												<li class="cnxh-recommend-house-info-name c2e clearfix"><span class="cnxh-recommend-house-title f12 fl">中央美地</span><span class="cnxh-recommend-house-price f12 fr"><i class="ncolor">¥<em class="f14">1200元</em></i>/月</span></li>
+												<li class="f12 c75">45m²&nbsp;/&nbsp;1室1厅</li>
+												<li class="clearfix h31">
+													<div class="fr cnxh-recommend-house-button cfff f13">去看看</div>
+												</li>
+											</ul>
+										</a>
+									</li>
+									<li class="cnxh-recommend-house pr">
+										<a href="http://mianyang.58.com/zufang/27682458040373x.shtml" target="_blank" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=sqtj_&amp;pos=4_&amp;alg=IA=AR1.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27682458040373');" class="cnxh-recommend-house-a" data-index="4"><img src="http://pic8.58cdn.com.cn/p1/small/n_v1bkuymc2pct7fpnmln4nq.png" class="cnxh-recommend-house-img">
+											<ul class="pa cnxh-recommend-house-info">
+												<li class="cnxh-recommend-house-info-name c2e clearfix"><span class="cnxh-recommend-house-title f12 fl">奥林春天</span><span class="cnxh-recommend-house-price f12 fr"><i class="ncolor">¥<em class="f14">900元</em></i>/月</span></li>
+												<li class="f12 c75">60m²&nbsp;/&nbsp;1室1厅</li>
+												<li class="clearfix h31">
+													<div class="fr cnxh-recommend-house-button cfff f13">去看看</div>
+												</li>
+											</ul>
+										</a>
+									</li>
+									<li class="cnxh-recommend-house pr">
+										<a href="http://mianyang.58.com/zufang/27694163748938x.shtml" target="_blank" onclick="clickLog('from=fc_zufang_vppvhouse_&amp;model=sqtj_&amp;pos=5_&amp;alg=IA=HOT2.0-IP=G1.0-PF=WBZUFANG_A_PLATFORM_M_&amp;id=27694163748938');" class="cnxh-recommend-house-a" data-index="5"><img src="http://pic8.58cdn.com.cn/mobile/small/n_v1bkuyfvmxph7vopfihfdq.jpg" class="cnxh-recommend-house-img">
+											<ul class="pa cnxh-recommend-house-info">
+												<li class="cnxh-recommend-house-info-name c2e clearfix"><span class="cnxh-recommend-house-title f12 fl">御营坝</span><span class="cnxh-recommend-house-price f12 fr"><i class="ncolor">¥<em class="f14">1100元</em></i>/月</span></li>
+												<li class="f12 c75">102m²&nbsp;/&nbsp;3室2厅</li>
+												<li class="clearfix h31">
+													<div class="fr cnxh-recommend-house-button cfff f13">去看看</div>
+												</li>
+											</ul>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+-->
+					</div>
+					<!-- 诚信房源显示评价 -->
+					<!-- ==S col 广告位 -->
+					<div id="direct_ad_bottom"></div>
+					<span style="display:none;" id="keyword"><!-- google_ad_section_start -->北京 房产信息 租房 公寓 商住
+                <!-- google_ad_section_end --></span>
+
+					<!-- ==E col 广告位  -->
+				</div>
+
+			</div>
+		</div>
+		<!--seo相关-->
+		<div class="cd-user-modal" >
+			<div class="cd-user-modal-container">
+				<ul class="cd-switcher">
+					<li>
+						<a href="#0" class="selected" onclick="userlogin()">用户登录</a>
+					</li>
+					<li>
+						<a href="#0" class="" onclick="usersign()">注册新用户</a>
+					</li>
+				</ul>
+
+				<div id="cd-login" class="is-selected">
+					<!-- 登录表单 -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signin-username">用户名</label>
+							<input class="full-width has-padding has-border" id="signin-username" type="text" placeholder="输入用户名">
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">密码</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="输入密码">
+						</p>
+
+						<p class="fieldset">
+							<input type="checkbox" id="remember-me" checked="">
+							<label for="remember-me">记住登录状态</label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width2" type="submit" value="登 录">
+						</p>
+					</form>
+				</div>
+
+				<div id="cd-signup" class="" >
+					<!-- 注册表单 -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">用户名</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="输入用户名">
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">密码</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="password" placeholder="输入密码">
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">确认密码</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="确认密码">
+						</p>
+
+						<p class="fieldset">
+							<input type="checkbox" id="accept-terms">
+							<label for="accept-terms">我已阅读并同意 <a href="#0">用户协议</a></label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width2" type="submit" value="注册新用户">
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

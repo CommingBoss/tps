@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seven.dao.UserDao">
+	<resultMap id="BaseResultMap" type="com.seven.model.User">
+		<id column="user_id" property="userId" jdbcType="INTEGER" />
+		<result column="user_name" property="userName" jdbcType="VARCHAR" />
+		<result column="user_password" property="userPassword"
+			jdbcType="VARCHAR" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		user_id, user_name, user_password
+	</sql>
+	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from user
+		where user_id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteById" parameterType="java.lang.Integer">
+		delete from user
+		where
+		user_id = #{id,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="com.seven.model.User">
+		insert into user (
+		user_name,
+		user_password
+		)
+		values
+		(
+		#{userName,jdbcType=VARCHAR},
+		#{userPassword,jdbcType=VARCHAR}
+		)
+	</insert>
+
+	<update id="updateById" parameterType="com.seven.model.User">
+		update user
+		set
+		user_name =
+		#{userName,jdbcType=VARCHAR},
+		user_password =
+		#{userPassword,jdbcType=VARCHAR}
+		where user_id =
+		#{userId,jdbcType=INTEGER}
+	</update>
+
+	<select id="selectByName" resultMap="BaseResultMap"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from user
+		where user_name = #{name}
+	</select>
+
+</mapper>

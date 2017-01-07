@@ -1,0 +1,401 @@
+#pulogin ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-top: 4px;
+	.
+}
+
+#pulogin ul #tipli_new {
+	margin: 0;
+	padding: 0;
+	width: 314px
+}
+
+#pulogin ul #tipli_new a.gotoreg_new {
+	color: #00c;
+	text-decoration: none
+}
+
+#pulogin ul #tipli_new a:hover {
+	color: #c00;
+	font-size: 12px;
+	text-decoration: underline
+}
+
+#pulogin ul #tipli_new p {
+	font-size: 12px;
+	background: 0 0;
+	border: none;
+	color: #f23f0f;
+	height: 21px;
+	line-height: 21px;
+	padding: 0 10px 0 60px;
+	width: 235px;
+	position: static
+}
+
+#pulogin ul li .logpic_new {
+	text-align: right;
+	padding-right: 12px;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	width: 50px;
+	color: #666;
+	font-size: 14px;
+	float: left
+}
+
+.tiplinone_new {
+	display: none
+}
+
+.tipnone_new {
+	display: none
+}
+
+.tipblock_new {
+	display: block
+}
+
+#pulogin ul .usernameli_new {
+	padding-top: 8px;
+	width: 314px;
+	height: 45px
+}
+
+#pulogin ul .passwordli_new {
+	padding-top: 16px;
+	width: 314px;
+	height: 45px
+}
+
+#pulogin ul .usernameli_new input,
+#pulogin ul .passwordli_new input {
+	outline: 0;
+	width: 210px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #ddd;
+	float: left;
+	margin: 0;
+	padding: 8px 0;
+	padding-left: 10px
+}
+
+#pulogin ul .passwordli_new p.showpasswordp_new input {
+	margin-left: 10px;
+	width: 15px;
+	height: 15px;
+	margin-top: 15px
+}
+
+#pulogin ul .imgyzmli_new {
+	display: none;
+	padding-top: 8px;
+	width: 314px
+}
+
+#pulogin ul .imgyzmli_new .logpic_new {
+	padding-top: 8px
+}
+
+#pulogin ul .imgyzmli_new input {
+	border: 1px solid #ddd;
+	outline: 0;
+	width: 62px;
+	padding-left: 10px;
+	margin-right: 3px;
+	_margin-right: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	float: inherit;
+	_margin-top: 0
+}
+
+#pulogin ul .imgyzmli_new img {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 96px;
+	height: 32px;
+	border: none;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-top: -4px;
+	_margin-top: -18px;
+	margin-right: 4px;
+	_margin-left: 4px
+}
+
+#pulogin ul .imgyzmli_new a {
+	color: #00c;
+	font-size: 12px;
+	text-decoration: none
+}
+
+#pulogin ul .imgyzmli_new a:hover {
+	color: #c00;
+	font-size: 12px;
+	text-decoration: underline
+}
+
+#pulogin ul .commitcode_new {
+	font-size: 12px;
+	width: 314px;
+	height: 20px;
+	padding-top: 5px;
+	padding-left: 62px
+}
+
+#pulogin ul .commitcode_new input {
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-top: 6px;
+	margin-right: 2px
+}
+
+#pulogin ul .commitcode_new .forgetcode_new {
+	margin-left: 78px
+}
+
+#pulogin ul .commitcode_new .forgetcode_new a {
+	color: #666;
+	text-decoration: none
+}
+
+#pulogin ul .commitcode_new .forgetcode_new a:hover {
+	text-decoration: underline
+}
+
+#pulogin ul .loginbtnli_new {
+	width: 314px;
+	padding-left: 62px;
+	margin-top: 10px
+}
+
+#pulogin ul .loginbtnli_new input {
+	outline: 0;
+	display: block;
+	background: url(//img.58cdn.com.cn/ui6/my/images/reg-btn.gif) no-repeat;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	margin: 0;
+	padding: 8px 20px 8px 20px
+}
+
+#pulogin ul .loginbtnli_new span {
+	padding-right: 1px;
+	display: inline-block;
+	font-weight: 700;
+	background: url(//img.58cdn.com.cn/ui6/my/images/reg-btn.gif) right top no-repeat;
+	height: 34px
+}
+
+#pulogin ul .loginbtnli_new span.sim_reg,
+#pulogin ul .loginbtnli_new span.sim_commitcodespan {
+	display: none
+}
+
+#pulogin ul input.wronginput_new {
+	border: #f7611e solid 1px
+}
+
+#pulogin ul input.achtiveblurinput_new {
+	border: #a7c0f1 solid 1px
+}
+
+.fontcolor_ccc_new {
+	color: #ccc
+}
+
+#bindClose {
+	cursor: pointer;
+	margin-right: 5px;
+	font-family: arial;
+	font-size: 24px;
+	_font-size: 12px;
+	font-weight: 700;
+	color: #999;
+	text-decoration: none;
+	float: right
+}
+
+.bind_bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9999;
+	_position: absolute;
+	_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop+ (document.documentElement.clientHeight-this.offsetHeight)/2: document.body.scrollTop+ (document.body.clientHeight - this.clientHeight)/2);
+	display: none
+}
+
+.bind_body {
+	width: 680px;
+	height: 430px;
+	margin: 0 auto;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -340px;
+	margin-top: -215px;
+	_margin-top: 0;
+	z-index: 9999;
+	box-shadow: 1px 1px 5px #ababab;
+	_position: absolute;
+	_top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop+ (document.documentElement.clientHeight-this.offsetHeight)/2: document.body.scrollTop+ (document.body.clientHeight - this.clientHeight)/2);
+	display: none
+}
+
+.bind_sidebar {
+	margin: 30px 42px;
+	background: url(//img.58cdn.com.cn/ucenter/my/img/bind_sidebar1.png) no-repeat;
+	height: 342px;
+	width: 226px;
+	float: left
+}
+
+.bind_right {
+	width: 322px;
+	margin-right: 42px;
+	float: right
+}
+
+.bind_right h2 {
+	padding: 18px 0;
+	border-bottom: 2px solid #e6e6e6;
+	font-size: 16px;
+	color: #5a5a5a;
+	font-weight: 400;
+	text-align: center
+}
+
+#bind_ul {
+	list-style: none
+}
+
+#bindTipLi,
+#bindMobileLi,
+#bindCodeLi,
+#bindVcodeLi,
+#bindBtnLi,
+#bindVcodeLi {
+	margin-top: 15px;
+	width: 320px;
+	height: 38px;
+	border: 1px solid #dcdcdc;
+	position: relative
+}
+
+#bindTipLi {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #ff541f;
+	margin-top: 0;
+	border: 0
+}
+
+#bindMobileLi {
+	margin-top: 0
+}
+
+#bindMobile,
+#bindMobileCode,
+#bindVcode {
+	width: 276px;
+	height: 20px;
+	padding: 8px 0 8px 42px;
+	outline: 0;
+	border: 0
+}
+
+#bindMobileCode,
+#bindVcode {
+	width: 165px;
+	float: left
+}
+
+#bindVcodeLi {
+	display: none
+}
+
+#bindVcode {
+	width: 188px
+}
+
+#bindVodeImg {
+	width: 90px;
+	height: 38px
+}
+
+.bindLabel {
+	width: 15px;
+	height: 22px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background: url(//img.58cdn.com.cn/m58/m3/before_login.png) no-repeat
+}
+
+#bindMobileLi .bindLabel {
+	background-position: -2px -135px
+}
+
+#bindCodeLi .bindLabel {
+	background-position: -28px -135px
+}
+
+#bindSendBtn {
+	width: 103px;
+	text-align: center;
+	border: 0;
+	border-left: 1px solid #e6e6e6;
+	background-color: #fff;
+	display: inline-block;
+	height: 30px;
+	line-height: 25px;
+	float: right;
+	margin: 5px 0;
+	cursor: pointer
+}
+
+#bindBtnLi {
+	margin-top: 30px;
+	border: 0
+}
+
+#bindBtn {
+	width: 322px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	background-color: #ff541f;
+	color: #fff;
+	border: none;
+	outline: 0;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer
+}
+
+#bindVcodeLi .bindLabel {
+	background: url(//img.58cdn.com.cn/ucenter/my/img/vcodeicon.png) no-repeat
+}

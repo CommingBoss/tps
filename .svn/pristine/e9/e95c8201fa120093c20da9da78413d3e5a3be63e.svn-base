@@ -1,0 +1,38 @@
+package com.seven.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+import com.seven.dao.UserDao;
+import com.seven.model.User;
+import com.seven.service.UserService;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	@Qualifier("userDao")
+	private UserDao userDao;
+
+	public int deleteById(Integer id) {
+		return userDao.deleteById(id);
+	}
+
+	public int insert(User user) {
+		return userDao.insert(user);
+	}
+
+	public User selectById(Integer id) {
+		return userDao.selectById(id);
+	}
+
+	public int updateById(User user) {
+		return userDao.updateById(user);
+	}
+
+	public User selectByName(String name) {
+		return userDao.selectByName(name);
+	}
+
+}

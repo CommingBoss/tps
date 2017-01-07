@@ -1,0 +1,59 @@
+package com.seven.util;
+
+import java.util.List;
+
+import com.seven.model.Record;
+
+public class LeastSquaresUtil {
+
+	// f(x) = a*x^2 + b*x + c
+	private double a;
+	private double b;
+	private double c;
+
+	private List<Record> records;
+
+	public void init() {
+		double N = 1e-13;
+		int i;
+		double m1, m2, m3, z1, z2, z3;
+		double sx = 0, sx2 = 0, sx3 = 0, sx4 = 0, sy = 0, sxy = 0, sx2y = 0;
+		// sx表示x[i]的累积和,sx2表示x[i]^2的累积和,sx3表示x[i]^3的累积和,sx4表示x[i]^4的累积和
+		// sy表示y[i]的累积和,sxy表示x[i]*y[i]的累积和,sx2y表示x[i]^2*y[i]的累积和
+		for (i = 0; i < records.size(); i++) {
+			Record record = records.get(i);
+			double x = record.getSecFromHour();
+			double y = record.getTemp();
+			System.out.println(x + " / " + y);
+			sx = sx + x;
+			sy = sy + y;
+			sx2 = sx2 + x * x;
+			sxy = sxy + x * y;
+			sx3 = sx3 + x * x * x;
+			sx2y = sx2y + x * x * x;
+			sx4 = sx4 + x * x * x * x;
+		}
+		do {
+			m1 = a;
+			a = (sx2y - sx3 * b - sx2 * c) / sx4;
+			z1 = (a - m1) * (a - m1);
+			m2 = b;
+			b = (sxy - sx * c - sx3 * a) / sx2;
+			z2 = (b - m2) * (b - m2);
+			m3 = c;
+			c = (sy - sx2 * a - sx * b) / 42;
+			z3 = (c - m3) * (c - m3);
+		    //System.out.println(a + "," + b + "," + c);
+		} while ((z1 > N) || (z2 > N) || (z3 > N));
+		System.out.println(a + "," + b + "," + c);
+	}
+
+	public List<Record> getRecords() {
+		return records;
+	}
+
+	public void setRecords(List<Record> records) {
+		this.records = records;
+	}
+
+}

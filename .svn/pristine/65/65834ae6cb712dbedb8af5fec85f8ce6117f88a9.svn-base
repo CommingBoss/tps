@@ -1,0 +1,26 @@
+package com.seven.util;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.seven.model.Record;
+
+public class TempUtil {
+
+	public static void main(String[] args) {
+		LeastSquaresUtil leastSquaresUtil = new LeastSquaresUtil();
+		List<Record> records = new ArrayList<Record>();
+		records.add(new Record(30.0, new Date()));
+		records.add(new Record(31.0, new Date()));
+		records.add(new Record(32.0, new Date()));
+		records.add(new Record(33.0, new Date()));
+		records.add(new Record(32.0, new Date()));
+		records.add(new Record(30.0, new Date()));
+		leastSquaresUtil.setRecords(records);
+		leastSquaresUtil.init();
+		
+
+	}
+
+}

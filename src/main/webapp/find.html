@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/easydialog.css" />
+		<link rel="stylesheet" href="css/topbar.css" />
+		<link rel="stylesheet" href="css/list-fang.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/find.js"></script>
+	</head>
+
+	<body>
+		<div id="topbar">
+			<div class="w pos">
+				<div class="bar_right">
+					<!--<div id="modify">
+						<a href="http://mianyang.58.com/">58同城首页</a><span class="gap">|</span></div>-->
+					<div id="login">
+						<a onclick="login()">登录</a><span class="gap">|</span>
+						<a onclick="login()">注册</a>
+					</div>
+					<div id="my58menu" class="haschild  ">
+						<a id="tomy58" target="_self" href="http://my.58.com/?pp=topbar">我的租房</a><span class="arrow"></span>
+						<div class="hc" id="loginbox">
+							<a id="tomypost" href="http://my.58.com/index/?pp=topbar">我的发布</a>
+							<a id="tomytradebuy" href="http://my.58.com/buyordermgr/?pp=topbar">买家交易</a>
+							<a id="tomytradesale" href="http://my.58.com/saleordermgr/?pp=topbar">个人卖家</a>
+							<a id="toCustomerService" href="http://my.58.com/mycomplain" target="_blank">客户服务</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- =E header -->
+		<div id="brand_list_top_banner" class="fang_top_banner"></div>
+		<!-- =S content -->
+		<!-- =S selection -->
+		<!-- =S selection -->
+		<div id="selection">
+			<!--<div class="nav" id="filter_crumbs">
+				<a href="/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti">绵阳58同城</a><cite></cite>
+				<a href="/house.shtml?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti">绵阳房产信息</a><cite></cite>
+				<a href="/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti">绵阳出租</a>
+			</div>-->
+
+			<div class="seltabs">
+				<a href="http://mianyang.58.com/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" class="select"><span>区域/地标</span></a>
+
+			</div>
+
+			<div class="relative">
+
+				<dl class="secitem" id="filter_quyu">
+					<dt>区域：</dt>
+					<dd>
+						<a href="/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" class="select">全校</a>
+
+						<a href="/fuchengqu/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti">新区</a>
+						<a href="/youxian/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti">老区</a>
+					</dd>
+				</dl>
+				<dl class="secitem" id="filter_price">
+					<dt>租金：</dt>
+					<dd>
+						<a href="http://mianyang.58.com/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" class="select">不限</a>
+						<a href="http://mianyang.58.com/chuzu/b1/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" priceval="0_500" onclick="clickLog('from=fc_list_mianyang_zujin_0_500');">100元以下</a>
+						<a href="http://mianyang.58.com/chuzu/b2/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" priceval="500_1000" onclick="clickLog('from=fc_list_mianyang_zujin_500_1000');">100-200元</a>
+						<a href="http://mianyang.58.com/chuzu/b3/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" priceval="1000_1500" onclick="clickLog('from=fc_list_mianyang_zujin_1000_1500');">200-300元</a>
+						<a href="http://mianyang.58.com/chuzu/b4/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" priceval="1500_2000" onclick="clickLog('from=fc_list_mianyang_zujin_1500_2000');">300-400元</a>
+						<a href="http://mianyang.58.com/chuzu/b5/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" priceval="2000_3000" onclick="clickLog('from=fc_list_mianyang_zujin_2000_3000');">400元以上</a>
+						<span class="prifilter"><span class="text text2"><input type="text" para="minprice" muti="1" min="0" max="999999" onkeyup="cknum(this)" name="b_q" autocomplete="off"></span><span class="dev"> - </span><span class="text text2"><input type="text" para="minprice" muti="1" min="0" max="999999" onkeyup="cknum(this)" name="b_q" autocomplete="off"></span><span class="dev"> 元 </span><span class="btn btn2" style="display:none"><input type="button" value="价格筛选" onclick="b_query();clickLog=('from=fc_list_mianyang_customizedPrice');"></span></span>
+					</dd>
+				</dl>
+				<dl class="secitem" id="filter_huxingshi">
+					<dt>厅室：</dt>
+					<dd>
+						<a href="http://mianyang.58.com/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" class="select">不限</a>
+						<a href="/chuzu/j1/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" huxingshival="1" onclick="clickLog('from=fc_list_mianyang_tingshi_yishi');">一室</a>
+						<a href="/chuzu/j2/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" huxingshival="2" onclick="clickLog('from=fc_list_mianyang_tingshi_liangshi');">两室</a>
+						<a href="/chuzu/j3/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" huxingshival="3" onclick="clickLog('from=fc_list_mianyang_tingshi_sanshi');">三室</a>
+						<a href="/chuzu/j4/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" huxingshival="4" onclick="clickLog('from=fc_list_mianyang_tingshi_sishi');">四室</a>
+						<a href="/chuzu/j5/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" huxingshival="5" onclick="clickLog('from=fc_list_mianyang_tingshi_sishiyishang');">四室以上</a>
+					</dd>
+				</dl>
+				<!--<dl class="secitem" id="filter_fangshi">
+					<dt>方式：</dt>
+					<dd>
+						<a href="javascript:void(0);" class="select">不限</a>
+						<a href="/zufang/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" onclick="clickLog('from=fc_list_mianyang_fangshi_1');">整套出租</a>
+
+						<a href="/hezu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" onclick="clickLog('from=fc_list_mianyang_fangshi_2');">单间出租</a>
+						<a href="/hezu/g2/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti" onclick="clickLog('from=fc_list_mianyang_fangshi_3');">床位出租</a>
+					</dd>
+				</dl>-->
+
+				<div id="SearchForm">
+					<form action="" method="get" onsubmit="b_query('final=1&amp;searchtype=3');return false;">
+						<input class="keyword c_000" id="keyword1" onkeyup="win1.GetContentData();" value="" maxlength="40" name="b_q" para="key" autocomplete="off">
+						<span class="sbtn" onmouseover="this.className='sbtn hover'" onmouseout="this.className='sbtn'"><input id="searchbtn1" name="" type="submit" class="atcate" onclick="clickLog('from=fc_list_mianyang_soubenlei');" value="搜本类"></span>
+						<span class="sbtn" onmouseover="this.className='sbtn hover'" onmouseout="this.className='sbtn'"></span>
+						<div class="DownloadApp">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+					</form>
+				</div>
+			</div>
+			<div id="selected" class="bar" style="display: none;">
+				<div class="barct">
+					<div id="selectedRightSection">
+						<a href="javascript:void(0)" id="btn_a" style="display: none;">保存该筛选条件</a>
+						<a href="javascript:void(0)" id="btn_b" style="display: none;">已保存(<i id="lsCount">0</i>)</a>
+						<div id="msgTips" class="msgTips" style="display:none;"><i class="msgTips_arrow"></i>
+							<a class="msgTips_close" href="javascript:void(0)"></a>
+							<div class="msgTips_con">注册58同城会员。让我们做您身边的生活帮手！<br><i class="btn"><input type="button" value="马上免费注册"></i> <i class="btn"><input type="button" value="马上登记需求"></i></div><i class="shadow"></i></div>
+					</div>
+				</div>
+			</div>
+			<div class="line-x"> </div>
+		</div>
+		<!-- =E selection -->
+		<div id="category">
+			<div class="tabsbar">
+				<div class="list-tabs">
+					<a onclick="javascript:clickLog('from=chuzu_allTab&amp;local=1057&amp;url=http://mianyang.58.com/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti&amp;datetime=2016-11-06 10:49:57&amp;rand=0.37934905193843005');_gaq.push(['pageTracker._trackEvent', 'list', 'click','chuzu_allTab_1057']);" title="绵阳出租" class="sel" href="/chuzu/?utm_source=market&amp;spm=b-31580022738699-me-f-824.bdpz_biaoti">
+						<span>
+          		<h1>绵阳出租</h1>
+			</span>
+					</a>
+
+				</div>
+			</div>
+
+			<div class="main">
+				<div id="infolist" class="cleft">
+					<div class="filterbar">
+						<table class="tbfilter" cellpadding="0" cellspacing="0">
+							<colgroup>
+								<col>
+								<col class="wjg">
+								<col class="wdate">
+							</colgroup>
+							<tbody>
+								<tr class=" ">
+									<td>
+										<span class="checkbox"><input name="" type="checkbox" value="" id="ispic" onclick="click_Ispic(this)"><label for="ispic">只看有图</label></span>
+										<!--<span class="checkbox smallIconOnline"><input type="checkbox" id="isonline" title="58帮帮客户端在线用户"><label for="isonline" title="58帮帮客户端在线用户">帮帮在线</label></span>
+										<div class="sortBlock">
+											<p>
+												<a class="sortDefault" href="javascript:void(0)">
+													<span>房屋类型</span>
+													<s></s>
+												</a>
+											</p>
+											<div class="sortList">
+												<a href="javascript:;" class="sel_on" data-sort="_1">不限</a>
+												<a href="javascript:;" data-sort="_3">普通住宅</a>
+												<a href="javascript:;" data-sort="_7">商住两用</a>
+												<a href="javascript:;" data-sort="_4">公寓</a>
+												<a href="javascript:;" data-sort="_5">别墅</a>
+												<a href="javascript:;" data-sort="_6">其他</a>
+											</div>
+										</div>-->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="top_google_ad" style="display: block;">
+						<div id="top_google_ad_bzb" style="display:none;"></div>
+						<div id="top_google_ad_agent" style="display: block;">
+							<div>
+								<table class="tbimg" cellpadding="0" cellspacing="0">
+									<tbody></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<table class="tbimg" cellpadding="0" cellspacing="0">
+						<colgroup>
+							<col class="wimg">
+							<col>
+							<col class="wrentm">
+
+						</colgroup>
+						<tbody>
+							<tr logr="gz_2_42377059970574_27855652431566_sortid:1478361605000@ses:busitime^desc@pubid:4342765" sortid="1478361605000" class=" ">
+								<td class="img">
+									<div class="img_list">
+										<span class="img_picCount">
+                            <span class="img_picCountOpacity">
+                            	
+                            </span>
+										<span>8 图</span>
+										</span>
+										<a href="http://jump.jinpai.58.com/service?target=INKicKZPP1XJ2FI5AKZJ7lFm4eEH5-It1yYLE1mwW4rdwhyZ1GeODAuof1OgHjeWS1ieFDhIXjEMcERbO7MK3Vd1R3BxuU5S-IpUlTrf_Who65bjmO_m0OMxytthrUmogyqSYvrOU2PGTTyZvitwdAB4gMHe3VI41yYLE1mwW4p9PZ3N0MDFgazns2R1dHLu-Dh66Ig3pOx5NLUO7cmG-Q&amp;local=1057&amp;pubid=4342765&amp;version=A&amp;psid=101656453193776923038715680&amp;entinfo=27855652431566_0&amp;apptype=0 " target="_blank" onclick="clickLog('from=fcpc_zflist_gzcount');">
+											<img lazy_src="http://pic8.58cdn.com.cn/p1/small/n_v1bl2lwtlgxejfqjo3zumq.jpg" src="http://pic8.58cdn.com.cn/p1/small/n_v1bl2lwtlgxejfqjo3zumq.jpg" alt="[整租]火车">
+										</a>
+									</div>
+								</td>
+								<td class="t qj-rentd">
+
+									<a href="http://jump.jinpai.58.com/service?target=INKicKZPP1XJ2FI5AKZJ7lFm4eEH5-It1yYLE1mwW4rdwhyZ1GeODAuof1OgHjeWS1ieFDhIXjEMcERbO7MK3Vd1R3BxuU5S-IpUlTrf_Who65bjmO_m0OMxytthrUmogyqSYvrOU2PGTTyZvitwdAB4gMHe3VI41yYLE1mwW4p9PZ3N0MDFgazns2R1dHLu-Dh66Ig3pOx5NLUO7cmG-Q&amp;local=1057&amp;pubid=4342765&amp;version=A&amp;psid=101656453193776923038715680&amp;entinfo=27855652431566_0&amp;apptype=0 " target="_blank" class="t" onclick="clickLog('from=fcpc_zflist_gzcount');">[整租]火车站 高品质小区【万达公馆】3室豪装 体验奢华</a>
+
+									<i class="clear"></i>
+									<p class="qj-renaddr">
+										<!------------------------------小区相关------------------------------>
+										<a href="/myhcz/chuzu/" class="a_xq1">火车站</a>
+										-
+										<a href="http://mianyang.58.com/xiaoqu/wandagongguan9/chuzu/" target="_blank" class="a_xq1">万达公馆租房</a>
+
+										<span>/</span> 今天
+
+									</p>
+
+								</td>
+								<td><b class="pri">3300</b> 元/月
+									<br>
+									<span class="showroom">3室2厅2卫</span>
+									<br>
+									<!-- 房产季 右下角补贴标识 -->
+									<!-- <span>
+	                    <i class="fcj_list_i"></i><a href="http://fcj.fang.58.com/fcjsubject/user/pc" target="_blank" onclick="javascript:clickLog('from=fcj_zflist_fxjzt');" ><span class="fcj_list_span">分享赢IPhone</span></a>
+	                </span> -->
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+					<div id="bottom_google_ad" style="display: block; position: relative; margin-top: -1px;">
+						<div id="zhineng_list_inner_bottom"></div>
+						<div id="list_left_uppage">
+							<div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cl"></div>
+			</div>
+		</div>
+		<div class="cd-user-modal">
+			<div class="cd-user-modal-container">
+				<ul class="cd-switcher">
+					<li>
+						<a href="#0" class="selected" onclick="userlogin()">用户登录</a>
+					</li>
+					<li>
+						<a href="#0" class="" onclick="usersign()">注册新用户</a>
+					</li>
+				</ul>
+
+				<div id="cd-login" class="is-selected">
+					<!-- 登录表单 -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signin-username">用户名</label>
+							<input class="full-width has-padding has-border" id="signin-username" type="text" placeholder="输入用户名">
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">密码</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="password" placeholder="输入密码">
+						</p>
+
+						<p class="fieldset">
+							<input type="checkbox" id="remember-me" checked="">
+							<label for="remember-me">记住登录状态</label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width2" type="submit" value="登 录">
+						</p>
+					</form>
+				</div>
+
+				<div id="cd-signup" class="">
+					<!-- 注册表单 -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">用户名</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="输入用户名">
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">密码</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="password" placeholder="输入密码">
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">确认密码</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="确认密码">
+						</p>
+
+						<p class="fieldset">
+							<input type="checkbox" id="accept-terms">
+							<label for="accept-terms">我已阅读并同意 <a href="#0">用户协议</a></label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width2" type="submit" value="注册新用户">
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

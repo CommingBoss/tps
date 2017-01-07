@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.2.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+
+	<!-- 扫描文件（自动注入）,包括DAO层注入Service层，Service层注入Controller层 -->
+	<context:component-scan
+		base-package="com.seven.controller,com.seven.service.impl,com.seven.dao" />
+	<mvc:annotation-driven />
+
+	<!-- 拦截器设置 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.seven.interceptor.TpsInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"> 
+		处理返回值为Json格式的数据 <property name="customReturnValueHandlers"> <list> <bean 
+		class="com.swust.kelab.adapter.JsonAndViewMethodReturnValueHandler" /> </list> 
+		</property> <property name="customArgumentResolvers"> <list> <bean class="com.swust.kelab.adapter.CommonQueryMethodArgumentResolver" 
+		/> </list> </property> </bean> 配置view视图处理器 <bean id="beanNameViewResolver" 
+		class="org.springframework.web.servlet.view.BeanNameViewResolver"> <property 
+		name="order" value="0" /> </bean> <bean id="jsonView" class="com.swust.kelab.view.JsonpView"> 
+		<property name="encoding"> <value type="org.codehaus.jackson.JsonEncoding">UTF8</value> 
+		</property> <property name="contentType" value="application/json;charset=UTF-8" 
+		/> <property name="extractValueFromSingleKeyModel" value="true" /> 配置Json解析时，去除为 
+		null 的字段 by htx <property name="objectMapper" ref="objectMapper" /> </bean> 
+		<bean id="objectMapper" class="org.codehaus.jackson.map.ObjectMapper"> <property 
+		name="serializationInclusion"> <value type="org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion"> 
+		NON_NULL </value> </property> </bean> -->
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	</bean>
+
+	<!-- 避免IE在ajax请求时，返回json出现下载 -->
+	<!-- <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"> 
+		<property name="supportedMediaTypes"> <list> <value>text/html;charset=UTF-8</value> 
+		</list> </property> </bean> -->
+
+	<!-- 对模型视图添加前后缀 -->
+	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
+		p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"/> -->
+</beans> 

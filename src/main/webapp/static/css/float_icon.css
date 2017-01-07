@@ -1,0 +1,42 @@
+html {
+	background-image: url(about:blank);
+	background-attachment: fixed
+}
+
+.ticon {
+	width: 45px;
+	height: 98px;
+	position: fixed;
+	right: 10px;
+	bottom: 30px;
+	_position: absolute;
+	_bottom: auto;
+	_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+	z-index: 9999
+}
+
+.bigicon {
+	display: block;
+	width: 45px;
+	height: 45px;
+	background: url(http://img.58cdn.com.cn/ui7/post/img/fb_list_post.png) no-repeat;
+	_background: url(http://img.58cdn.com.cn/ui7/post/img/fb_list_post_ie6.png) no-repeat
+}
+
+.back {
+	margin-bottom: 3px;
+	background-position: 0 -400px
+}
+
+.ticon a:hover .back {
+	background-position: -53px -400px
+}
+
+.suggest {
+	margin-top: 4px;
+	background-position: 0 -450px
+}
+
+.ticon a:hover .suggest {
+	background-position: -53px -450px
+}

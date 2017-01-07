@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seven.dao.UserDao">
+	<resultMap id="BaseResultMap" type="com.seven.model.User">
+		<id column="userId" property="userId" jdbcType="INTEGER" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
+		<result column="type" property="type" jdbcType="INTEGER" />
+		<result column="tel" property="tel" jdbcType="VARCHAR" />
+		<result column="cancel_flag" property="cancel_flag" jdbcType="INTEGER" />
+		<result column="delete_flag" property="delete_flag" jdbcType="INTEGER" />
+	</resultMap>
+	<sql id="Base_Column_List"> userId, name, password, type, tel, cancel_flag, delete_flag</sql>
+	<update id="cancel" parameterType="com.seven.model.User">
+		update user
+		set delete_flag = '1'
+		where
+		userId = #{userId};
+	</update>
+	<insert id="insert" parameterType="com.seven.model.User">
+		insert into user (name,password,type,tel,cancel_flag,delete_flag)
+		values
+		(
+		#{name},
+		#{password},
+		#{type},
+		#{tel},
+		'1',
+		'0'
+		)
+	</insert>
+	
+	<select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+		select *
+		from user
+		where name = #{name}
+	</select>
+	
+	<select id="selectById" resultMap="BaseResultMap">
+		select *
+		from user
+		where userId = #{userId};
+	</select>
+
+	<update id="updateTel" parameterType="com.seven.model.User">
+		update user
+		set
+		tel = #{tel}
+		where userId = #{userId};
+	</update>
+
+	<update id="updatePassword" parameterType="com.seven.model.User">
+		update user
+		set
+		password = #{password}
+		where userId = #{userId};
+	</update>
+	
+	
+	<select id="login" resultMap="BaseResultMap" parameterType="com.seven.model.User">
+		select *
+		from user
+		where name = #{name} and password = #{password};
+	</select>
+	
+	<update id="setLogin" parameterType="com.seven.model.User">
+		update user
+		set
+		cancel_flag = '0'
+		where name = #{name} and password= #{password};
+	</update>
+</mapper>

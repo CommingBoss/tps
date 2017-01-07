@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seven.dao.HouseInfoDao">
+	<resultMap id="BaseResultMap" type="com.seven.model.HouseInfo">
+		<id column="houseInfoId" property="houseInfoId" jdbcType="INTEGER" />
+		<result column="userId" property="userId" jdbcType="INTEGER" />
+		<result column="userName" property="userName" jdbcType="VARCHAR" />
+		<result column="tel" property="tel" jdbcType="VARCHAR" />
+		<result column="village" property="village" jdbcType="VARCHAR" />
+		<result column="floor" property="floor" jdbcType="VARCHAR" />
+		<result column="title" property="title" jdbcType="VARCHAR" />
+		<result column="sketch" property="sketch" jdbcType="VARCHAR" />
+		<result column="size" property="size" jdbcType="VARCHAR" />
+		<result column="price" property="price" jdbcType="INTEGER" />
+		<result column="configuration" property="configuration" jdbcType="VARCHAR" />
+		<result column="picture" property="picture" jdbcType="VARCHAR" />
+		<result column="simpleAdress" property="simpleAdress" jdbcType="VARCHAR" />
+		<result column="detailedAdress" property="detailedAdress" jdbcType="VARCHAR" />
+		<result column="publishDate" property="publishDate" jdbcType="TIMESTAMP" />
+		<result column="ifOrder" property="ifOrder" jdbcType="INTEGER" />
+	</resultMap>
+
+	<insert id="insert" parameterType="com.seven.model.HouseInfo">
+		insert into houseinfo (userId,userName,tel,village,floor,title,sketch,size,price,configuration,
+		picture,simpleAdress,detailedAdress,publishDate,ifOrder)
+		values
+		(
+		#{userId},#{userName},#{tel},#{village},#{floor},#{title},#{sketch},#{size},
+		#{price},#{configuration},#{picture},#{simpleAdress},#{detailedAdress},#{publishDate},#{ifOrder}
+		)
+	</insert>
+	
+	<select id="seleteHouseInfo" resultMap="BaseResultMap">
+		select *
+		from houseinfo
+		where houseInfoId = #{houseInfoId}
+	</select>
+	
+	<update id="delete" parameterType="com.seven.model.HouseInfo">
+		update houseinfo
+		set ifOrder = '1'
+		where
+		houseInfoId = #{houseInfoId};
+	</update>
+	
+	<update id="update" parameterType="com.seven.model.HouseInfo">
+		update houseinfo
+		set title=#{title},sketch=#{sketch},size=#{size},price=#{price},userName=#{userName},tel=#{tel},village=#{village},
+		floor=#{floor},configuration=#{configuration},simpleAddress=#{simpleAddress},detailedAddress=#{detailedAddress},picture=#{picture}
+		where
+		houseInfoId = #{houseInfoId};
+	</update>
+	
+	<select id="searchHouseInfoByPrice" resultMap="BaseResultMap">
+	    select *
+		from houseinfo
+		where
+		price LIKE CONCAT('%',#{price},'%')
+	    limit
+		#{pagedelete},#{page_size};
+	</select>
+	
+	<select id="searchHouseInfoBySimpleAdress" resultMap="BaseResultMap">
+	    select *
+		from houseinfo
+		where
+		simpleAdress LIKE CONCAT('%',#{simpleAdress},'%')
+	    limit
+		#{pagedelete},#{page_size};
+	</select>
+	
+	<select id="searchHouseInfoBySize" resultMap="BaseResultMap">
+		select *
+		from houseinfo
+		where
+		size LIKE CONCAT('%',#{size},'%')
+	    limit
+		#{pagedelete},#{page_size};
+	</select>
+	
+	<select id="searchHouseInfoByPubliseDate" resultMap="BaseResultMap">
+		select *
+		from houseinfo
+		where
+		publiseDate LIKE CONCAT('%',#{publiseDate},'%')
+	    limit
+		#{pagedelete},#{page_size};
+	</select>
+	
+	
+	<select id="allPublishHouseInfo" resultMap="BaseResultMap">
+		select *
+		from houseinfo
+		where userId =#{userId}
+		limit
+		#{pagedelete},#{page_size};
+	</select>
+	
+	
+</mapper>

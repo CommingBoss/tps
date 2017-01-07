@@ -1,0 +1,570 @@
+#swk_bg {
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	_height: expression(document.body.offsetHeight+"px");
+	background-color: #000;
+	z-index: 99998;
+	-moz-opacity: .5;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	_filter: alpha(opacity=50)
+}
+
+.swk_bg {
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	_height: expression(document.body.offsetHeight+"px");
+	background-color: #000;
+	z-index: 99998;
+	-moz-opacity: .5;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	_filter: alpha(opacity=50)
+}
+
+#swk_show1 {
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	overflow-x: hidden;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -290px;
+	width: 580px;
+	height: 400px;
+	padding: 8px;
+	background-color: #fff;
+	z-index: 99999;
+	overflow: auto
+}
+
+.swk_show1 {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -290px;
+	width: 580px;
+	height: 400px;
+	padding: 8px;
+	background-color: #fff;
+	z-index: 99999;
+	overflow: auto
+}
+
+.swk_checknumber {
+	margin: 0;
+	padding: 0;
+	padding-top: 55px;
+	font-size: 22px;
+	color: #e6570b;
+	text-align: center;
+	font-family: Microsoft YaHei
+}
+
+.swk_close-btn1 {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin-right: 34px;
+	margin-top: 30px
+}
+
+.swk_tip_gotoapp {
+	margin: 0;
+	padding: 0;
+	padding-top: 34px;
+	font-size: 14px;
+	color: #606060;
+	font-family: Microsoft YaHei;
+	text-align: center
+}
+
+.swk_appqrcode {
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	height: 160px;
+	margin: 0 auto;
+	margin-top: 45px
+}
+
+.swk_appqrcode .swk_appqrcodeimgtip {
+	margin-bottom: 10px;
+	margin-left: 24px;
+	margin-right: 34px
+}
+
+.swk_appqrcode .swk_appqrcodeimg {
+	margin-bottom: 10px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #c8c8c8
+}
+
+.swk_useapp {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #606060;
+	font-family: Microsoft YaHei;
+	margin-left: 355px
+}
+
+.swk_text {
+	margin: 0;
+	padding: 0;
+	height: 3000px;
+	width: 100%
+}
+
+.swk_text p {
+	margin: 0;
+	padding: 0;
+	height: 500px;
+	background: #e6570b
+}
+
+#swk_show2 {
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	overflow-x: hidden;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -220px;
+	width: 440px;
+	padding: 8px;
+	background-color: #fff;
+	z-index: 99999;
+	overflow: auto
+}
+
+.swk_show2 {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -220px;
+	width: 440px;
+	height: 380px;
+	padding: 8px;
+	background-color: #fff;
+	z-index: 99999;
+	overflow: auto
+}
+
+.swk_text {
+	margin: 0;
+	padding: 0;
+	height: 3000px;
+	width: 100%
+}
+
+.swk_text p {
+	margin: 0;
+	padding: 0;
+	height: 500px;
+	background: #ccc
+}
+
+.swk_achievenumber_title {
+	margin: 0;
+	padding: 0;
+	padding: 20px 0 40px 46px;
+	font-size: 22px;
+	color: #000;
+	font-family: Microsoft YaHei
+}
+
+.swk_close-btn2 {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin-right: 20px;
+	margin-top: 20px
+}
+
+.swk_tip_secret {
+	margin: 0;
+	padding: 0;
+	width: 360px;
+	height: 50px;
+	margin-left: 46px;
+	padding-top: 13px;
+	line-height: 20px;
+	background: #fffdcc;
+	font-size: 14px;
+	border: 1px solid #f2e2ae;
+	border-radius: 5px
+}
+
+.swk_tip_secret_p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Microsoft YaHei
+}
+
+.swk_tip_secret_p i {
+	margin: 0 10px 10px 11px;
+	float: left;
+	display: block;
+	width: 18px;
+	height: 18px
+}
+
+.swk_tip_secret_p a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #15c;
+	font-family: Microsoft YaHei
+}
+
+.swk_mymobilenumber {
+	margin: 0;
+	padding: 0;
+	width: 440px;
+	margin: 36px auto;
+	margin-bottom: 0
+}
+
+.swk_mymobilenumber .swk_lxnumber {
+	margin: 0;
+	padding: 0;
+	padding-left: 46px;
+	font-size: 14px;
+	color: gray;
+	letter-spacing: 2px
+}
+
+.swk_mymobilenumber .swk_lxnumberdiv {
+	height: 38px
+}
+
+.swk_mymobilenumber .swk_lxnumberdiv span {
+	float: left;
+	margin-top: 10px;
+	font-family: Microsoft YaHei
+}
+
+.swk_mymobilenumber .swk_lxnumberdiv input {
+	float: left;
+	margin-left: 10px;
+	line-height: 38px
+}
+
+.swk_yzm_div {
+	margin: 0;
+	padding: 0;
+	display: none
+}
+
+.swk_mymobilenumber .swk_mymobilenumber_yzm {
+	margin: 0;
+	padding: 0;
+	padding-left: 46px;
+	font-size: 14px;
+	color: gray;
+	letter-spacing: 4px
+}
+
+.swk_mymobilenumber_input {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	padding-left: 10px;
+	width: 266px;
+	height: 36px;
+	outline: 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-bottom: 10px
+}
+
+.swk_input-ver-code {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	padding-left: 10px;
+	width: 160px;
+	height: 36px;
+	outline: 0;
+	border: 1px solid #e0e0e0;
+	border-right: 0;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-bottom: 0;
+	margin-left: 21px;
+	margin-top: 10px
+}
+
+.swk_mymobilenumber_tip {
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+	color: #fd634f;
+	font-size: 12px;
+	padding-left: 120px;
+	padding-bottom: 10px;
+	display: none
+}
+
+.swk_mymobilenumber_tip i {
+	margin: 0;
+	padding: 0;
+	padding-right: 4px;
+	font-style: normal;
+	text-align: center;
+	color: #fff;
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	line-height: 16px
+}
+
+.swk_mymobilenumber_tip span {
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	width: 220px
+}
+
+.swk_yzm_btn {
+	margin: 0;
+	padding: 0;
+	width: 115px;
+	font-size: 14px;
+	background: #fff;
+	color: gray;
+	height: 38px;
+	outline: 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	margin-left: -10px;
+	padding: 0 16px;
+	_padding: 0 3px
+}
+
+.swk_disabled_click p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 44px;
+	font-size: 14px;
+	font-family: Microsoft YaHei
+}
+
+.swk_disabled_click {
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 360px;
+	height: 44px;
+	color: #fff;
+	background: silver;
+	border-radius: 5px;
+	font-weight: 700;
+	cursor: pointer
+}
+
+.swk_achievenumber_btn {
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 360px;
+	height: 44px;
+	color: #fff;
+	background: #ed6d06;
+	border-radius: 5px;
+	font-weight: 700
+}
+
+#swk_show3 {
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	overflow-x: hidden;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -290px;
+	width: 440px;
+	height: 367px;
+	padding: 8px;
+	background-color: #fff;
+	z-index: 99999;
+	overflow: auto
+}
+
+.swk_show3 {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -290px;
+	width: 440px;
+	height: 377px;
+	padding: 8px;
+	background-color: #fff;
+	z-index: 99999;
+	overflow: auto
+}
+
+.swk_text p {
+	margin: 0;
+	padding: 0;
+	height: 500px;
+	background: #ccc
+}
+
+.swk_achievenumber_title {
+	margin: 0;
+	padding: 0;
+	padding: 20px 0 34px 46px;
+	font-size: 22px;
+	color: #000;
+	font-family: Microsoft YaHei
+}
+
+.swk_close-btn3 {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin-right: 20px;
+	margin-top: 20px
+}
+
+.swk_tip_secret {
+	margin: 0;
+	padding: 0;
+	width: 360px;
+	height: 50px;
+	margin-left: 46px;
+	padding-top: 13px;
+	line-height: 20px;
+	background: #fffdcc;
+	font-size: 14px;
+	border: 1px solid #f2e2ae;
+	border-radius: 5px
+}
+
+.swk_tip_secret_p i {
+	margin: 0;
+	padding: 0;
+	margin: 0 10px 10px 11px;
+	float: left;
+	display: block;
+	width: 18px;
+	height: 18px;
+	font-family: Microsoft YaHei
+}
+
+.swk_tip_secret_p a {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: #15c;
+	font-family: Microsoft YaHei
+}
+
+.swk_show_secret_number_tip {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-size: 14px;
+	font-family: Microsoft YaHei;
+	font-weight: 700
+}
+
+.swk_show_secret_number {
+	margin: 0;
+	padding: 0;
+	padding: 40px 46px 0 46px
+}
+
+.swk_show_secret_number .swk_phonenumber i {
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	margin: 3px 9px 0 16px;
+	width: 27px;
+	height: 35px
+}
+
+.swk_show_secret_number .swk_phonenumber {
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 30px 0 38px 0;
+	font-family: Microsoft YaHei;
+	font-size: 40px;
+	color: #fd634f
+}
+
+.swk_show_secret_number .swk_myphonenumber {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+	color: gray;
+	font-family: Microsoft YaHei
+}
+
+.swk_show_secret_number .swk_myphonenumber .swk_phonenumber_change {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #15c;
+	cursor: pointer;
+	margin-left: 20px;
+	font-family: Microsoft YaHei
+}

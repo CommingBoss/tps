@@ -1,0 +1,149 @@
+/*new pop*/
+
+body {
+	_height: 100%;
+}
+
+#infotop_auto_inc {}
+
+#infotop_auto_inc .poplayer .title,
+.poplayer .close,
+.poplayer .hd,
+.poplayer .close {
+	background: url(//img.58cdn.com.cn/lbg/jizh/bg.gif) no-repeat;
+}
+
+#infotop_auto_inc .poplayer {
+	top: 50%;
+	left: 50%;
+	margin-left: -256px;
+	position: fixed;
+	width: 520px;
+	z-index: 9999;
+	background: #FFF;
+	border: 6px solid #666;
+	border-radius: 6px;
+	_position: absolute;
+	display: none;
+}
+
+#infotop_auto_inc .poplayer .title {
+	height: 40px;
+	line-height: 40px;
+	background-position: 0 -300px;
+	background-repeat: repeat-x;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+#infotop_auto_inc .poplayer .close {
+	height: 18px;
+	width: 18px;
+	background-position: 0 -342px;
+	display: block;
+	float: right;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.poplayer .title {
+	height: 40px;
+	line-height: 40px;
+	background-position: 0 -300px;
+	background-repeat: repeat-x;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+#infotop_auto_inc .poplayer .title h3 {
+	float: left;
+	font-size: 14px;
+}
+
+#infotop_auto_inc .poplayer .title h3 span {
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 10px;
+	color: #888;
+}
+
+#infotop_auto_inc .poplayer .hd {
+	height: 40px;
+	line-height: 40px;
+	background-position: 0 -300px;
+	background-repeat: repeat-x;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+#infotop_auto_inc .poplayer .hd h3 {
+	float: left;
+	font-size: 14px;
+}
+
+#infotop_auto_inc .poplayer .hd h3 span {
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 10px;
+	color: #888;
+}
+
+#infotop_auto_inc .poplayer .bd {}
+
+#infotop_auto_inc .poplayer .bd iframe {
+	height: 370px;
+	overflow: hidden;
+}
+
+#infotop_auto_inc_masklayer {
+	background-color: #000000;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	filter: alpha(opacity: 50);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 998;
+	_position: absolute;
+	_top: expression(documentElement.scrollTop+ "px");
+}
+
+.zdtit {
+	*z-index: 7;
+}
+
+.xxtip {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 12px;
+	color: #6788cc;
+	cursor: pointer;
+	z-index: 7;
+}
+
+.xxtipbox {
+	position: absolute;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 380px;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 5px;
+	background: #fff;
+	right: 0;
+	top: 30px;
+	display: none;
+}
+
+.xxtipbox .remind_ico {
+	display: block;
+	width: 14px;
+	height: 9px;
+	background: url(//img.58cdn.com.cn/ds/my/ico-arr.png) no-repeat;
+	overflow: hidden;
+	position: absolute;
+	top: -9px;
+	right: 70px;
+}
